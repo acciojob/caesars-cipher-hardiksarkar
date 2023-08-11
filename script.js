@@ -32,7 +32,16 @@ const lookup = {
 };
 
 function rot13(encodedStr) {
-  let decodedArr = []; // Your Result goes here
+	// Your Result goes here
+	let ans="";
+		for (const i of s) {
+    if(i=="?" || i== ","){
+        ans+=i
+    }else{
+        ans+=String.fromCharCode((i.charCodeAt(0))+13);
+    }
+			return ans;
+}
   // Only change code below this line
 
   return; //return decodedArr
