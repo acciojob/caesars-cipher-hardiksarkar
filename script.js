@@ -34,12 +34,9 @@ const lookup = {
 function rot13(encodedStr) {
 	// Your Result goes here
 	let ans="";
-		for (const i of s) {
-    if(i=="?" || i== ","){
-        ans+=i
-    }else{
-        ans+=String.fromCharCode((i.charCodeAt(0))+13);
-    }
+for (const i of s) {
+    ans+=lookup[i];
+}
 			return ans;
 }
   // Only change code below this line
